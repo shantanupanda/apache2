@@ -72,7 +72,7 @@ Group <%= node['apache']['group'] %>
         Require all granted
 </Directory>
 
-<Directory <%= node['apache']['docroot_dir'] %>>
+<Directory /var/www>
         Options Indexes FollowSymLinks
         AllowOverride None
         Require all granted
